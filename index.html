@@ -1,15 +1,52 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visualisation des Attaques de Cybersécurité</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <title>Cybersecurity Attack Analysis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        #menu {
+            margin-bottom: 20px;
+        }
+        #menu ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        #menu li {
+            display: inline;
+            margin-right: 15px;
+        }
+        #menu a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        #menu a:hover {
+            color: #007BFF;
+        }
+        #visualization {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+    </style>
 </head>
 <body>
-    <h1>Visualisation des Attaques de Cybersécurité</h1>
-    <div id="chart"></div>
-    <script src="script.js"></script>
+    <h1>Cybersecurity Attack Analysis</h1>
+    <div id="menu"></div>
+    <div id="visualization">
+        <svg width="100%" height="600"></svg>
+    </div>
+
+    <!-- Load D3.js from CDN -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <!-- Load the main script -->
+    <script src="script.js" type="module"></script>
 </body>
 </html>
