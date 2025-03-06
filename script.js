@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 d3.csv('cybersecurity_attacks.csv').then(function(data) {
     console.log(data);
 
@@ -66,7 +66,6 @@ d3.csv('cybersecurity_attacks.csv').then(function(data) {
         .style("font-size", "16px")
         .text("Nombre d'attaques par type");
 });
-=======
 // Main script to dynamically load graph modules and handle menu interactions
 
 // Function to dynamically load all JS files from the graphs folder with error handling
@@ -180,4 +179,3 @@ async function init() {
 }
 
 init();
->>>>>>> master
